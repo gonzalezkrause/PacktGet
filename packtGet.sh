@@ -38,6 +38,6 @@ curl -k --silent --cookie "${cookie}" "${baseUrl}${bookUrl}"
 
 echo "[+] Downloading book"
 # Download book
-curl -k --silent --cookie "${cookie}" --output "./packtBooks/${bookTitle:1}.pdf" "${baseUrl}${bookDownloadEP}/pdf"
+curl -k -L --silent --cookie "${cookie}" --output "./packtBooks/${bookTitle:1}.pdf" "${baseUrl}${bookDownloadEP}/pdf"
 
 echo "[+] Done”
