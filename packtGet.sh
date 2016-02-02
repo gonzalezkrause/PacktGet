@@ -18,7 +18,7 @@
 # 	* /ebook_download/{bookID}/mobi
 
 
-cookie=‘SESS_live=abcd1234;'
+cookie='SESS_live=abcd1234;'
 
 baseUrl="https://www.packtpub.com/"
 bookInfoEP="packt/offers/free-learning"
@@ -40,4 +40,4 @@ echo "[+] Downloading book"
 # Download book
 curl -k -L --silent --cookie "${cookie}" --output "./packtBooks/${bookTitle:1}.pdf" "${baseUrl}${bookDownloadEP}/pdf"
 
-echo "[+] Done”
+echo "[+] Done"
